@@ -4,11 +4,12 @@ import java.util.Scanner;
 
 public class Main {
 
+
     public static void main(String[] args) {
 
         Scanner teclado = new Scanner(System.in);
 
-        System.out.println("Qual unidade voce de entrada\n");
+        System.out.println("Escolha a unidade de origem\n");
         System.out.println("1 - CELSIUS");
         System.out.println("2 - FAHRENHEIT");
         System.out.println("* - KELVIN");
@@ -23,10 +24,10 @@ public class Main {
             unidadeEnum = UnidadeDeTemperaturaEnum.KELVIN;
         }
 
-        System.out.println("Para qual unidade voce deseja converter\n");
+        System.out.println("Escolha a unidade a ser convertida\n");
         System.out.println("1 - CELSIUS");
         System.out.println("2 - FAHRENHEIT");
-        System.out.println("* - KELVIN");
+        System.out.println("3 - KELVIN");
         int unidadeAlvo = teclado.nextInt();
 
         System.out.println("Digite quantas temperaturas quer converter");
@@ -49,3 +50,5 @@ public class Main {
 
     }
 }
+
+

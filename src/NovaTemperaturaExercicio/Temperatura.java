@@ -56,8 +56,9 @@ public class Temperatura {
 
     static final double FATOR1 = (double) 9/5;
     static final double FATOR2 = 32;
-    static final double FATOR3 = 273.15;
+    static final double FATOR3 = 273;
 
+    static final double FATOR4 = (double) 5/9;
 
     private double converterCelsiusEmFahrenheit(double c){
         double f = c * FATOR1 + FATOR2;
@@ -70,7 +71,7 @@ public class Temperatura {
     }
 
     private double converterFahrenheitEmKelvin(double f){
-        double k = f - FATOR2 + FATOR1 + FATOR3;
+        double k = (f - FATOR2) * FATOR4 + FATOR3;
         return k;
     }
 
@@ -85,7 +86,7 @@ public class Temperatura {
     }
 
     private double converterKelvinsEmFahrenheit(double k){
-        double f = k - FATOR3;
+        double f = (k - FATOR3) * FATOR1 + FATOR2;
         return f;
     }
 
