@@ -126,8 +126,8 @@ public class Main {
 
         System.out.println("");
 
-        System.out.printf("A média dos valores de entrada é: %.2f %s %n", mediaEntrada, unidadeString);
-        System.out.printf("A média dos valores transformados é: %.2f %s", mediaSaida);
+        System.out.println("A média dos valores de entrada é: %.2f %s %n", mediaEntrada, unidadeString);
+        System.out.println("A média dos valores transformados é: %.2f %s", mediaSaida);
 
     }
 }
