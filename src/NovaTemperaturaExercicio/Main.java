@@ -116,10 +116,10 @@ public class Main {
                 System.out.println("O valor de " + temperatura.getValor() + unidadeString +" em Celsius é " + saida + "ºC");
             } else if (unidadeAlvo == 2) {
                 saida = temperatura.converte(UnidadeDeTemperaturaEnum.FAHRENHEIT);
-                System.out.println("O valor de " + temperatura.getValor() + unidadeString +" em Fahrenheith eh " + saida + "ºF");
+                System.out.println("O valor de " + temperatura.getValor() + unidadeString +" em Fahrenheith é " + saida + "ºF");
             } else if (unidadeAlvo == 3) {
                 saida = temperatura.converte(UnidadeDeTemperaturaEnum.KELVIN);
-                System.out.println("O valor de " + temperatura.getValor() + unidadeString +" em Kelvin eh " + saida + "K");
+                System.out.println("O valor de " + temperatura.getValor() + unidadeString +" em Kelvin é " + saida + "K");
             } else {
                 System.out.println("Opção digitada inválida");
                 return;
@@ -135,8 +135,9 @@ public class Main {
 
 
         System.out.println("");
-        System.out.println("A média dos valores de entrada é: " + mediaEntrada + unidadeString);
-        System.out.println("A média dos valores transformados é: " + mediaSaida + unidadeString);
+
+        System.out.printf("A média dos valores de entrada é: %.2f %s", mediaEntrada, unidadeString);
+        System.out.printf("A média dos valores transformados é: %.2f %s", mediaSaida, unidadeString);
 
     }
 }
