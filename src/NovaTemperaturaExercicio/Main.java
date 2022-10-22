@@ -8,6 +8,7 @@ public class Main {
 
     public static void main(String[] args) {
 
+        //Pegar temperatura de entrada
 
         Scanner teclado = new Scanner(System.in);
 
@@ -126,8 +127,8 @@ public class Main {
 
         System.out.println("");
 
-        System.out.println("A média dos valores de entrada é: %.2f %s %n", mediaEntrada, unidadeString);
-        System.out.println("A média dos valores transformados é: %.2f %s", mediaSaida);
+        System.out.printf("A média dos valores de entrada é: %.2f %s %n", mediaEntrada, unidadeString);
+        System.out.printf("A média dos valores transformados é: %.2f %s", mediaSaida, unidadeString);
 
     }
 }
