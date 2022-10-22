@@ -95,6 +95,8 @@ public class Main {
             return;
         }
 
+        System.out.println("__________________________________________");
+        System.out.println("");
 
         //média colocar em array ou criar variável
 
@@ -123,7 +125,8 @@ public class Main {
                 return;
             }
 
-
+            System.out.println("__________________________________________");
+            System.out.println("");
 
             mediaEntrada += valor/ quantidadeTotal;
             mediaSaida += saida/quantidadeTotal;
