@@ -113,6 +113,7 @@ public class Main {
             Temperatura temperatura = new Temperatura(valor, unidadeEnum);
             if (unidadeAlvo == 1) {
                 saida = temperatura.converte(UnidadeDeTemperaturaEnum.CELSIUS);
+                //System.out.println("O valor de " + temperatura.getValor() + unidadeString +" em Celsius é " + saida + "ºC");
                 System.out.println("O valor de " + temperatura.getValor() + unidadeString +" em Celsius é " + saida + "ºC");
             } else if (unidadeAlvo == 2) {
                 saida = temperatura.converte(UnidadeDeTemperaturaEnum.FAHRENHEIT);
@@ -136,7 +137,7 @@ public class Main {
 
         System.out.println("");
 
-        System.out.printf("A média dos valores de entrada é: %.2f %s", mediaEntrada, unidadeString);
+        System.out.printf("A média dos valores de entrada é: %.2f %s %n", mediaEntrada, unidadeString);
         System.out.printf("A média dos valores transformados é: %.2f %s", mediaSaida, unidadeString);
 
     }
