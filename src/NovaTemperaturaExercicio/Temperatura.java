@@ -18,24 +18,26 @@ public class Temperatura {
             case KELVIN:
                 if(unidadeAlvo.equals(UnidadeDeTemperaturaEnum.CELSIUS)) {
                     return converterKelvinEmCelcius(valor);
-                } else {
+                } else if (unidadeAlvo.equals(UnidadeDeTemperaturaEnum.FAHRENHEIT)) {
                     return converterKelvinsEmFahrenheit(valor);
                 }
+                break;
             case CELSIUS:
                 if (unidadeAlvo.equals(UnidadeDeTemperaturaEnum.KELVIN)) {
                     return converterCelsiusEmKelvin(valor);
-                } else {
+                } else if (unidadeAlvo.equals(UnidadeDeTemperaturaEnum.FAHRENHEIT)){
                     return converterCelsiusEmFahrenheit(valor);
                 }
+                break;
             case FAHRENHEIT:
                 if (unidadeAlvo.equals(UnidadeDeTemperaturaEnum.CELSIUS)) {
                     return converterFahrenheitEmCelsius(valor);
-                } else {
+                } else if (unidadeAlvo.equals(UnidadeDeTemperaturaEnum.KELVIN)){
                     return converterFahrenheitEmKelvin(valor);
                 }
-            default:
-                return valor;
+                break;
         }
+        return valor;
     }
 
     public double getValor() {
@@ -89,6 +91,7 @@ public class Temperatura {
         double f = (k - FATOR3) * FATOR1 + FATOR2;
         return f;
     }
+
 
 
 
