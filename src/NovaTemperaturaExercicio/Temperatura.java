@@ -58,7 +58,7 @@ public class Temperatura {
 
     static final double FATOR1 = (double) 9/5;
     static final double FATOR2 = 32;
-    static final double FATOR3 = 273;
+    static final double FATOR3 = 273.15; //fonte: https://www.metric-conversions.org/pt-br/temperatura/celsius-em-kelvin.htm
 
     static final double FATOR4 = (double) 5/9;
 
