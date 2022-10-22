@@ -8,7 +8,6 @@ public class Main {
 
     public static void main(String[] args) {
 
-        //Pegar temperatura de entrada
 
         Scanner teclado = new Scanner(System.in);
 
@@ -19,8 +18,6 @@ public class Main {
         System.out.println("2 - FAHRENHEIT");
         System.out.println("3 - KELVIN");
 
-        //Tratar erro
-        //int unidade = teclado.nextInt();
 
         int unidade;
         try {
@@ -51,8 +48,6 @@ public class Main {
         }
 
 
-
-        //Pegar saidas
         System.out.println("__________________________________________");
         System.out.println("");
         System.out.println("Escolha a unidade a ser convertida\n");
@@ -60,8 +55,7 @@ public class Main {
         System.out.println("2 - FAHRENHEIT");
         System.out.println("3 - KELVIN");
 
-        //tratar erro
-        //int unidadeAlvo = teclado.nextInt();
+
 
         int unidadeAlvo;
 
@@ -82,9 +76,6 @@ public class Main {
         System.out.println("");
         System.out.println("Digite quantas temperaturas quer converter");
 
-        //tratar erro
-
-        //int quantidade = teclado.nextInt();
 
         int quantidade;
 
@@ -98,7 +89,6 @@ public class Main {
         System.out.println("__________________________________________");
         System.out.println("");
 
-        //média colocar em array ou criar variável
 
         int quantidadeTotal = quantidade;
 
@@ -113,7 +103,6 @@ public class Main {
             Temperatura temperatura = new Temperatura(valor, unidadeEnum);
             if (unidadeAlvo == 1) {
                 saida = temperatura.converte(UnidadeDeTemperaturaEnum.CELSIUS);
-                //System.out.println("O valor de " + temperatura.getValor() + unidadeString +" em Celsius é " + saida + "ºC");
                 System.out.println("O valor de " + temperatura.getValor() + unidadeString +" em Celsius é " + saida + "ºC");
             } else if (unidadeAlvo == 2) {
                 saida = temperatura.converte(UnidadeDeTemperaturaEnum.FAHRENHEIT);
@@ -138,7 +127,7 @@ public class Main {
         System.out.println("");
 
         System.out.printf("A média dos valores de entrada é: %.2f %s %n", mediaEntrada, unidadeString);
-        System.out.printf("A média dos valores transformados é: %.2f %s", mediaSaida, unidadeString);
+        System.out.printf("A média dos valores transformados é: %.2f %s", mediaSaida);
 
     }
 }
